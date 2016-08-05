@@ -15,7 +15,6 @@ set shiftwidth=4
 set laststatus=2
 set statusline+=%*
 set statusline+=%#warningmsg# 
-set statusline+=%{SyntasticStatuslineFlag()}
 set backspace=indent,eol,start
 
 """"PLUGINS""""
@@ -43,13 +42,8 @@ call plug#end()
 
 """"PLUGIN SETTINGS""""
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:syntastic_javascript_checkers = ['eslint']
+let g:airline_powerline_fonts = 1
 
 """"Apperance""""
 
@@ -86,9 +80,7 @@ nmap <C-l> $
 nmap <C-a> <C-t>
 nmap <C-s> g<C-]>
 
-
-
-"""""OLD""""
+""""OLD""""
 
 "set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -96,7 +88,15 @@ nmap <C-s> g<C-]>
 "let g:ConqueTerm_Color = 2
 "let g:ConqueTerm_CloseOnEnd = 1
 "let g:ConqueTerm_StartMessages = 0
-"
+
+"let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_always_populate_loc_list = 1
+"set statusline+=%{SyntasticStatuslineFlag()}
+"Plug 'scrooloose/syntastic'
+
 "nnoremap <Leader>l :SyntasticToggleMode<CR>
 "nmap <Leader><Leader> V
 
@@ -107,7 +107,6 @@ nmap <C-s> g<C-]>
 "Plug 'Raimondi/delimitMate'
 "Plug 'christoomey/vim-tmux-navigator'
 "Plug 'terryma/vim-expand-region'
-"Plug 'scrooloose/syntastic'
 
 "vmap v <Plug>(expand_region_expand)
 "vmap <C-v> <Plug>(expand_region_shrink)
