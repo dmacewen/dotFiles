@@ -27,6 +27,9 @@ Plug 'bling/vim-bufferline'
 "Misc
 Plug 'vim-scripts/gitignore'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'w0rp/ale'
+Plug 'posva/vim-vue'
 "Plug 'ludovicchabant/vim-gutentags'
 "Code Selection/Navigation
 Plug 'scrooloose/nerdtree'
