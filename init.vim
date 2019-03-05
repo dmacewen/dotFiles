@@ -93,23 +93,38 @@ function! NumberToggle()
     endif
 endfunc
 
+nnoremap <C-n> :call NumberToggle()<cr>
+
 """"MAPPINGS""""
 
 let mapleader = "\<Space>"
-nnoremap <Leader><tab> :bn<CR>
+"nnoremap <Leader><tab> :bn<CR>
+nmap <C-l> :bn<CR>
+nmap <C-h> :bp<CR>
+
+"FZF Files - Git Files and Local Files
 nnoremap <Leader>o :GFiles<CR>
-nnoremap <Leader>p :Files<CR>
-nnoremap <Leader>u :BLines<CR>
-nnoremap <Leader>i :Lines<CR>
-nnoremap <C-n> :call NumberToggle()<cr>
+nnoremap <Leader>O :Files<CR>
+
+"FZF Lines - Buffer Lines and Project Lines
+nnoremap <Leader>i :BLines<CR>
+nnoremap <Leader>I :Lines<CR>
+
+"FZF Tags - Buffer Tags and Project Tags
+nnoremap <Leader>p :BTags<CR>
+nnoremap <Leader>P :Tags<CR>
+
+"Jump 10 lines at a time
+nmap <C-j> 10j
+nmap <C-k> 10k
 
 " Jumping paragraphs at a time
-nmap <C-j> }  
-nmap <C-k> {
+"nmap <C-j> }  
+"nmap <C-k> {
 
 "Jump to beginning or end of a line
-nmap <C-h> ^
-nmap <C-l> $
+"nmap <C-h> ^
+"nmap <C-l> $
 
 "Tag remaping
 "nmap <C-a> <C-t>
