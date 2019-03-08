@@ -102,7 +102,7 @@ let mapleader = "\<Space>"
 nmap <C-l> :bn<CR>
 nmap <C-h> :bp<CR>
 
-"FZF Files - Git Files and Local Files
+"FZF 'Open' Files - Git Files and Local Files
 nnoremap <Leader>o :GFiles<CR>
 nnoremap <Leader>O :Files<CR>
 
@@ -111,12 +111,12 @@ nnoremap <Leader>i :BLines<CR>
 nnoremap <Leader>I :Lines<CR>
 
 "FZF Tags - Buffer Tags and Project Tags
-nnoremap <Leader>p :BTags<CR>
-nnoremap <Leader>P :Tags<CR>
+nnoremap <Leader>t :BTags<CR>
+nnoremap <Leader>T :Tags<CR>
 
 "Jump 10 lines at a time
-nmap <C-j> 10j
-nmap <C-k> 10k
+nmap <C-j> 10jzz
+nmap <C-k> 10kzz
 
 " Jumping paragraphs at a time
 "nmap <C-j> }  
