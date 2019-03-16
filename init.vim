@@ -37,7 +37,8 @@ Plug 'w0rp/ale'
 "Plug 'ludovicchabant/vim-gutentags'
 "Code Selection/Navigation
 "Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-Plug 'unblevable/quick-scope'
+"Plug 'unblevable/quick-scope'
+Plug 'easymotion/vim-easymotion'
 "Plug 'Shougo/deoplete.nvim'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'junegunn/vim-slash'
@@ -141,6 +142,9 @@ nmap <C-t> :TagbarToggle<CR>
 
 "neovim terminal
 tnoremap <Esc> <C-\><C-N>
+
+"Capital P for pasting without overwriting register
+xnoremap <expr> P '"_d"'.v:register.'P'
 
 """COC - COPIED FROM GITHUB EXAMPLE """
 
